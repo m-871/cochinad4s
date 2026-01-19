@@ -147,12 +147,6 @@ public class CalculadoraR1 extends JFrame implements ActionListener {
         
     }
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-}
-
     public class ListenButton implements ActionListener {
     
         @Override
@@ -169,4 +163,5 @@ public class CalculadoraR1 extends JFrame implements ActionListener {
         }
     
     }
+
 }
