@@ -16,7 +16,7 @@ public class CalculadoraR1 extends JFrame implements ActionListener {
         
         JFrame ventana = new JFrame();
         
-        ventana.setVisible(true);
+
         ventana.setSize(387, 480);
         ventana.setTitle("Calculadora");
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -123,7 +123,7 @@ public class CalculadoraR1 extends JFrame implements ActionListener {
             recuadro.setText("/");
         });        
         
-        
+        ventana.setVisible(true);        
         
         ventana.add(recuadro);
         ventana.add(boton1);
@@ -147,21 +147,9 @@ public class CalculadoraR1 extends JFrame implements ActionListener {
         
     }
 
-    public class ListenButton implements ActionListener {
-    
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            if (e.getSource() == botonSuma) {
-                num1 = Integer.parseInt(textfield.getText());
-                operador = "+";
-                textfield.setText("");
-            }
-            else if (e.getSource() == ) {
-                recuadro.setText(num1 - num2);
-            }
-        
-        }
-    
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
 }
